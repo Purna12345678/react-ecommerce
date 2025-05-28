@@ -1,0 +1,57 @@
+[
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/app.js",
+    "issue": "Replaced ReactDOM.render with createRoot().render.",
+    "line": 7
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/router/Route.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 28
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/cart/BillDoneStep.js",
+    "issue": "Removed deprecated lifecycle method: componentWillMount",
+    "line": 22
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/footer/FooterSocialInfo.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 4
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/main/ProductContainer.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 21
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/product/ProductCount.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 4
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/product/ProductDetailSite.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 17
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/product/ProductInfo.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 11
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/product/ProductSize.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 11
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/product/SizeGuide.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 6
+  },
+  {
+    "file": "C:/Users/PUYadav/OneDrive - Opteamix LLC/Desktop/react-migrate-ecom/react-ecommerce-master/src/components/user/LoginForm.js",
+    "issue": "Class component found — converted to functional component.",
+    "line": 11
+  }
+]
