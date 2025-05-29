@@ -80,7 +80,7 @@ if (!GOOGLE_API_KEY) {
 
 const genAI = GOOGLE_API_KEY ? new GoogleGenerativeAI(GOOGLE_API_KEY) : null;
 // You can choose different models, e.g., 'gemini-pro', 'gemini-pro-vision'
-const aiModel = genAI ? genAI.getGenerativeModel({ model: "gemini-pro" }) : null;
+const aiModel = genAI ? genAI.getGenerativeModel({ model: "gemini-1.5-flash" }) : null;
 
 // --- 4. Define a Codemod Handler Function (Simulated & AI-augmented) ---
 // This function now includes logic to optionally use an AI agent.
