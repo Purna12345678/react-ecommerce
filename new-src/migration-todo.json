@@ -1,0 +1,751 @@
+[
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/app.js",
+    "issue": "ReactDOM.render replaced with createRoot().render().",
+    "line": 7,
+    "suggestion": "Ensure `react-dom/client` is correctly imported. Manual adjustments for other ReactDOM methods might be needed.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/router/Route.js",
+    "issue": "Class component `RouteApp` converted to functional component with state and methods.",
+    "line": 28,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/router/Route.js",
+    "issue": "Functional component `RouteApp` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 28,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/carousel/BannerCarousel.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 22,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/carousel/BannerCarousel.js",
+    "issue": "Lifecycle method `componentWillUnmount` needs manual migration to `useEffect` or other hooks.",
+    "line": 32,
+    "suggestion": "Convert the logic inside `componentWillUnmount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/carousel/BannerCarousel.js",
+    "issue": "Class component `BannerCarousel` converted to functional component with state and methods.",
+    "line": 12,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/carousel/BannerCarousel.js",
+    "issue": "Functional component `BannerCarousel` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 12,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/carousel/RecommendCarousel.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 18,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/carousel/RecommendCarousel.js",
+    "issue": "Class component `RecommendCarousel` converted to functional component with state and methods.",
+    "line": 11,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/BillDoneStep.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 13,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/BillDoneStep.js",
+    "issue": "Lifecycle method `componentWillMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 22,
+    "suggestion": "Convert the logic inside `componentWillMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/BillDoneStep.js",
+    "issue": "Class component `BillDoneStep` converted to functional component with state and methods.",
+    "line": 5,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/CartSite.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  isLogin: PT.bool,\n  cart: PT.arrayOf(PT.object),\n  handleLogin: PT.func\n}...`.",
+    "line": 14,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/CartSite.js",
+    "issue": "Removed PropTypes declaration: `CartSite.propTypes = propTypes;...`.",
+    "line": 74,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/CartSite.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 22,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/CartSite.js",
+    "issue": "Class component `CartSite` converted to functional component with state and methods.",
+    "line": 14,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/CartSite.js",
+    "issue": "Functional component `CartSite` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 14,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/ConfirmStep.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  handleBillDone: PT.func\n}...`.",
+    "line": 7,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/ConfirmStep.js",
+    "issue": "Removed PropTypes declaration: `ConfirmStep.propTypes = propTypes;...`.",
+    "line": 27,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/OrderBill.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  orderValue: PT.number\n}...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/OrderBill.js",
+    "issue": "Removed PropTypes declaration: `OrderBill.propTypes = propTypes;...`.",
+    "line": 18,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/OrderItem.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  id: PT.number,\n  name: PT.string,\n  marketPrice: PT.number,\n  salePrice: PT.nu...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/OrderItem.js",
+    "issue": "Removed PropTypes declaration: `OrderItem.propTypes = propTypes;...`.",
+    "line": 42,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/StepProgress.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  steps: PT.arrayOf(PT.object)\n}...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/cart/StepProgress.js",
+    "issue": "Removed PropTypes declaration: `StepProgress.propTypes = propTypes;...`.",
+    "line": 17,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/footer/FooterSocialInfo.js",
+    "issue": "Class component `FooterSocialInfo` converted to functional component with state and methods.",
+    "line": 4,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/footer/FooterSocialInfo.js",
+    "issue": "Functional component `FooterSocialInfo` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 4,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/footer/FooterSubMenu.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  menuHeader: PT.string,\n  menuItems: PT.arrayOf(PT.object)\n}...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/footer/FooterSubMenu.js",
+    "issue": "Removed PropTypes declaration: `FooterSubMenu.propTypes = propTypes;...`.",
+    "line": 45,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/Header.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  cart: PT.arrayOf(PT.object)\n}...`.",
+    "line": 9,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/Header.js",
+    "issue": "Removed PropTypes declaration: `Header.propTypes = propTypes;...`.",
+    "line": 30,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/HeaderToolWrapper.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 17,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/HeaderToolWrapper.js",
+    "issue": "Lifecycle method `componentWillUnmount` needs manual migration to `useEffect` or other hooks.",
+    "line": 20,
+    "suggestion": "Convert the logic inside `componentWillUnmount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/HeaderToolWrapper.js",
+    "issue": "Class component `HeaderToolWrapper` converted to functional component with state and methods.",
+    "line": 9,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/SearchBar.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 21,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/SearchBar.js",
+    "issue": "Class component `SearchBar` converted to functional component with state and methods.",
+    "line": 5,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/SearchBar.js",
+    "issue": "Functional component `SearchBar` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 5,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/ShowcaseHeader.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  iconHeader: PT.string,\n  headerMain: PT.string.isRequired,\n  headerSub: PT.str...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/header/ShowcaseHeader.js",
+    "issue": "Removed PropTypes declaration: `ShowcaseHeader.propTypes = propTypes;...`.",
+    "line": 39,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/home/HomeProductSection.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 19,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/home/HomeProductSection.js",
+    "issue": "Class component `HomeProductSection` converted to functional component with state and methods.",
+    "line": 8,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/home/HomeProductSection.js",
+    "issue": "Functional component `HomeProductSection` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 8,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/FilterSite.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 26,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/FilterSite.js",
+    "issue": "Class component `FilterSite` converted to functional component with state and methods.",
+    "line": 14,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/FilterSite.js",
+    "issue": "Functional component `FilterSite` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 14,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/Pagination.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  page: PT.number,\n  currentPage: PT.number\n}...`.",
+    "line": 6,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/Pagination.js",
+    "issue": "Removed PropTypes declaration: `Pagination.propTypes = propTypes;...`.",
+    "line": 51,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/Pagination.js",
+    "issue": "Class component `Pagination` converted to functional component with state and methods.",
+    "line": 6,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/ProductContainer.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  dataProducts: PT.array,\n  showcaseHeader: PT.string\n}...`.",
+    "line": 9,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/ProductContainer.js",
+    "issue": "Removed PropTypes declaration: `ProductContainer.propTypes = propTypes;...`.",
+    "line": 114,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/ProductContainer.js",
+    "issue": "Class component `ProductContainer` converted to functional component with state and methods.",
+    "line": 15,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/ProductContainer.js",
+    "issue": "Functional component `ProductContainer` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 15,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/ProductItem.js",
+    "issue": "Removed PropTypes declaration: `let propTypes = {\n  id: PT.string,\n  category: PT.string,\n  type: PT.string,\n  name: PT.string,\n  pr...`.",
+    "line": 5,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/ProductItem.js",
+    "issue": "Removed PropTypes declaration: `ProductItem.propTypes = propTypes;...`.",
+    "line": 62,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/ProductList.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  dataProducts: PT.arrayOf(PT.object)\n}...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/ProductList.js",
+    "issue": "Removed PropTypes declaration: `ProductList.propTypes = propTypes;...`.",
+    "line": 31,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/SearchSite.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 19,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/SearchSite.js",
+    "issue": "Class component `SearchSite` converted to functional component with state and methods.",
+    "line": 9,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/TopBtn.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 10,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/TopBtn.js",
+    "issue": "Lifecycle method `componentWillUnmount` needs manual migration to `useEffect` or other hooks.",
+    "line": 13,
+    "suggestion": "Convert the logic inside `componentWillUnmount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/main/TopBtn.js",
+    "issue": "Class component `TopBtn` converted to functional component with state and methods.",
+    "line": 5,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/nav/HeaderMenu.js",
+    "issue": "Class component `HeaderNavigation` converted to functional component with state and methods.",
+    "line": 8,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/nav/HeaderMenu.js",
+    "issue": "Functional component `HeaderNavigation` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 8,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/nav/SidebarMenu.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  handleProList: PT.func\n}...`.",
+    "line": 11,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/nav/SidebarMenu.js",
+    "issue": "Removed PropTypes declaration: `SidebarMenu.propTypes = propTypes;...`.",
+    "line": 99,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/nav/SidebarMenu.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 21,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/nav/SidebarMenu.js",
+    "issue": "Class component `SidebarMenu` converted to functional component with state and methods.",
+    "line": 11,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/nav/SidebarMenu.js",
+    "issue": "Functional component `SidebarMenu` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 11,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/popup/PopupCart.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  btnTool: PT.element\n}...`.",
+    "line": 8,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/popup/PopupCart.js",
+    "issue": "Removed PropTypes declaration: `PopupCart.propTypes = propTypes;...`.",
+    "line": 62,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/popup/PopupLogin.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  btnTool: PT.element\n}...`.",
+    "line": 6,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/popup/PopupLogin.js",
+    "issue": "Removed PropTypes declaration: `PopupLogin.propTypes = propTypes;...`.",
+    "line": 25,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductColor.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  dataColor: PT.array,\n  selectedColor: PT.string,\n  handleSelectColor: PT.func\n...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductColor.js",
+    "issue": "Removed PropTypes declaration: `ProductColor.propTypes = propTypes;...`.",
+    "line": 68,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductColor.js",
+    "issue": "Class component `ProductColor` converted to functional component with state and methods.",
+    "line": 4,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductColor.js",
+    "issue": "Functional component `ProductColor` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 4,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductComment.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  dataComments: PT.array\n}...`.",
+    "line": 7,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductComment.js",
+    "issue": "Removed PropTypes declaration: `ProductComment.propTypes = propTypes;...`.",
+    "line": 32,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductCommentItem.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  urlAvatar: PT.string,\n  username: PT.string,\n  date: PT.string,\n  rating: PT.n...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductCommentItem.js",
+    "issue": "Removed PropTypes declaration: `ProductCommentItem.propTypes = propTypes;...`.",
+    "line": 44,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductCount.js",
+    "issue": "Class component `ProductCount` converted to functional component with state and methods.",
+    "line": 4,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductDetail.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  dataDes: PT.string,\n  proInfo: PT.object,\n  canAddToCart: PT.bool,\n  hasSelect...`.",
+    "line": 4,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductDetail.js",
+    "issue": "Removed PropTypes declaration: `ProductDeatail.propTypes = propTypes;...`.",
+    "line": 64,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductDetailSite.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  handleAddToCart: PT.func\n}...`.",
+    "line": 13,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductDetailSite.js",
+    "issue": "Removed PropTypes declaration: `ProductDetailSite.propTypes = propTypes;...`.",
+    "line": 61,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductDetailSite.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 21,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductDetailSite.js",
+    "issue": "Class component `ProductDetailSite` converted to functional component with state and methods.",
+    "line": 13,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductDetailSite.js",
+    "issue": "Functional component `ProductDetailSite` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 13,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductInfo.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 41,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductInfo.js",
+    "issue": "Class component `ProductInfo` converted to functional component with state and methods.",
+    "line": 11,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductInfo.js",
+    "issue": "Functional component `ProductInfo` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 11,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductSize.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  dataSize: PT.array,\n  selectedSize: PT.string,\n  handleSelectSize: PT.func\n}...`.",
+    "line": 5,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductSize.js",
+    "issue": "Removed PropTypes declaration: `ProductSize.propTypes = propTypes;...`.",
+    "line": 68,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductSize.js",
+    "issue": "Class component `ProductSize` converted to functional component with state and methods.",
+    "line": 5,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/ProductSize.js",
+    "issue": "Functional component `ProductSize` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 5,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/SizeGuide.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 15,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/SizeGuide.js",
+    "issue": "Class component `SizeGuide` converted to functional component with state and methods.",
+    "line": 6,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/product/SizeGuide.js",
+    "issue": "Functional component `SizeGuide` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 6,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/LoginForm.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  handleLogin: PT.func,\n  isLogin: PT.bool\n}...`.",
+    "line": 6,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/LoginForm.js",
+    "issue": "Class component `LoginForm` converted to functional component with state and methods.",
+    "line": 6,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/LoginForm.js",
+    "issue": "Functional component `LoginForm` transformed to use React Hooks (useState/useCallback) for state and methods.",
+    "line": 6,
+    "suggestion": "Review `useState` initial values and `useCallback` dependencies. Manual refactoring for complex `this` usages might be needed. Pay close attention to context (`_this`) and prop drilling.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/LoginSite.js",
+    "issue": "Removed PropTypes declaration: `const propTypes = {\n  handleLogin: PT.func,\n  isLogin: PT.bool\n}...`.",
+    "line": 8,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/LoginSite.js",
+    "issue": "Removed PropTypes declaration: `LoginSite.propTypes = propTypes;...`.",
+    "line": 48,
+    "suggestion": "PropTypes are typically replaced by TypeScript for type checking. Review component props.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/LoginSite.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 29,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/LoginSite.js",
+    "issue": "Class component `LoginSite` converted to functional component with state and methods.",
+    "line": 27,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/RegisterSite.js",
+    "issue": "Lifecycle method `componentDidMount` needs manual migration to `useEffect` or other hooks.",
+    "line": 8,
+    "suggestion": "Convert the logic inside `componentDidMount` to a `useEffect` hook. Pay attention to dependencies. Consider `useMemo` or `useRef` for other cases.",
+    "transformed": false
+  },
+  {
+    "file": "C:/Users/PUYadav/react-ecommerce/new-src/src/components/user/RegisterSite.js",
+    "issue": "Class component `RegisterSite` converted to functional component with state and methods.",
+    "line": 6,
+    "suggestion": "Review generated `useState` and `useCallback` declarations. Manual refactoring is required for lifecycle methods (`useEffect`), complex `setState` calls, `this.refs`, and Context API usage.",
+    "transformed": true
+  }
+]

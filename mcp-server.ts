@@ -1,8 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import zod from "zod";
-import express from "express";
-import * as bodyParser from "body-parser";
-// To parse JSON bodies
+import express from "express"; // Using default import for express
+import bodyParser from "body-parser"; // To parse JSON bodies
 
 // --- 1. Initialize Express Application ---
 const app = express();
@@ -77,11 +76,11 @@ const mcpServer = new McpServer({
 const applyCodemod = async (
   sourceCode: string,
   codemodName: string,
-  config: Record<string, any> = {}
+  config?: Record<string, any>
 ): Promise<{ transformedCode: string; messages: string[]; success: boolean }> => {
-  console.log(`Applying codemod: ${codemodName} with config:`, JSON.stringify(config) || "{}");
+  console.log(`Applying codemod: ${codemodName} with config:`, config);
   console.log("Original source code snippet:", sourceCode.substring(0, 50) + "...");
-  
+
   let transformedCode = sourceCode;
   const messages: string[] = [];
   let success = true;
@@ -90,8 +89,8 @@ const applyCodemod = async (
     // --- SIMULATED CODEMOD LOGIC ---
     // Replace this with actual codemod execution logic (e.g., using jscodeshift, AST parsers)
     if (codemodName === "renameVariable") {
-      const oldName: string = typeof config?.oldName === "string" ? config.oldName : "oldVar";
-      const newName: string = typeof config?.newName === "string" ? config.newName : "newVar";
+      const oldName = config?.oldName || "oldVar";
+      const newName = config?.newName || "newVar";
       transformedCode = sourceCode.replace(new RegExp(`\\b${oldName}\\b`, 'g'), newName);
       messages.push(`Replaced all occurrences of '${oldName}' with '${newName}'.`);
     } else if (codemodName === "addCopyrightHeader") {
@@ -111,11 +110,7 @@ const applyCodemod = async (
   } catch (error) {
     console.error("Error applying codemod:", error);
     transformedCode = sourceCode; // Revert to original on error
-    if (error instanceof Error) {
-      messages.push(`Error applying codemod: ${error.message}`);
-    } else {
-      messages.push(`Error applying codemod: ${String(error)}`);
-    }
+    messages.push(`Error applying codemod: ${error.message}`);
     success = false;
   }
 
