@@ -23,6 +23,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as fsa from 'fs-extra';
 import { ScriptTarget, JsxEmit } from 'typescript'
+const { exec } = require('child_process');
 const newSrcBasePath = "./new-src";
 const sourceFilesPath = path.join(newSrcBasePath, 'src', '**', '*.{ts,tsx,js,jsx}');
 const migrationReportPath = path.join(newSrcBasePath, 'migration-todo.json');
@@ -754,6 +755,17 @@ async function main() {
     // 3. Save changes and generate report
     await project.save();
     console.log(`Migration complete. Transformed files saved to '${newSrcBasePath}'.`);
+
+    exec('npm run tsm:all', (error: Error | null, stdout: string, stderr: string) => {
+  if (error) {
+    console.error(`Error: ${error.message}`);
+    return;
+  }
+  if (stderr) {
+    console.error(`Stderr: ${stderr}`);
+  }
+  console.log(`Output:\n${stdout}`);
+});
  
     // Write the migration report
     fsa.writeFileSync(migrationReportPath, JSON.stringify(issues, null, 2));
